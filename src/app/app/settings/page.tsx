@@ -9,9 +9,9 @@ export default async function AppPage() {
   return (
     <DashboardPage>
       <DashboardPageHeader>
-        <DashboardPageHeaderTitle>Tarefas</DashboardPageHeaderTitle>
+        <DashboardPageHeaderTitle>Configurações</DashboardPageHeaderTitle>
       </DashboardPageHeader>
-      <DashboardPageMain>Tarefas</DashboardPageMain>
+      <DashboardPageMain>Configurações</DashboardPageMain>
     </DashboardPage>
   );
 }
