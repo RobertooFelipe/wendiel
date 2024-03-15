@@ -13,7 +13,7 @@ export function AuthForm() {
 
   const handleSubmit = form.handleSubmit(async (data) => {
     try {
-      await signIn("email", { email: data.email, redirect: false });
+      await signIn("nodemailer", { email: data.email, redirect: false });
 
       toast({
         title: "Check your email",
@@ -65,8 +65,12 @@ export function AuthForm() {
               {...form.register("password")}
             />
           </div>
-          <Button className="w-full" type="submit">
-            Login
+          <Button
+            className="w-full"
+            type="submit"
+            disabled={form.formState.isSubmitting}
+          >
+            {form.formState.isSubmitting ? "Sending..." : "Login"}
           </Button>
           <Button className="w-full" variant="outline">
             Login with Google
