@@ -42,7 +42,7 @@ import { Badge } from "@/components/ui/badge";
 import { Todo } from "../../types";
 import { useRouter } from "next/navigation";
 import { deleteTodo, upsertTodo } from "../../actions";
-import { toast } from "sonner";
+import { toast } from "@/components/ui/use-toast";
 
 type TodoDataTableProps = {
   data: Todo[];

@@ -27,7 +27,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { upsertTodoSchema } from "../../schema";
 import { upsertTodo } from "../../actions";
 import { useRouter } from "next/navigation";
-import { toast } from "sonner";
+import { toast } from "@/components/ui/use-toast";
 
 type TodoUpsertSheetProps = {
   children?: React.ReactNode;
